@@ -22,32 +22,34 @@
 <body>
 
     <div id="wrapper">
-
+ <?php require_once("nav.php"); ?>
+ <?php echo "hello";?>
         <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="#">
-                        OBTHub
-                    </a>
-                </li>
-                <li>
-                    <a href="#">All Posts</a>
-                </li>
-                <li>
-                    <a href="#">Events</a>
-                </li>
-                <li>
-                    <a href="#">Articles</a>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Chat</a>
-                </li>
-            </ul>
-        </div>
+        <!--<div id="sidebar-wrapper">-->
+        <!--    <ul class="sidebar-nav">-->
+        <!--        <li class="sidebar-brand">-->
+        <!--            <a href="#">-->
+        <!--                OBTHub-->
+        <!--            </a>-->
+        <!--        </li>-->
+        <!--        <li>-->
+        <!--            <a href="#">All Posts</a>-->
+        <!--        </li>-->
+        <!--        <li>-->
+        <!--            <a href="#">Events</a>-->
+        <!--        </li>-->
+        <!--        <li>-->
+        <!--            <a href="#">Articles</a>-->
+        <!--        </li>-->
+        <!--        <li>-->
+        <!--            <a href="#">About</a>-->
+        <!--        </li>-->
+        <!--        <li>-->
+        <!--            <a href="#">Chat</a>-->
+        <!--        </li>-->
+        <!--    </ul>-->
+        <!--</div>-->
+       
         <!-- /Sidebar -->
 
         <!-- Page Content -->
