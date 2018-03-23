@@ -1,4 +1,3 @@
-<!--<div id="sidebar-wrapper">-->
 <ul class="sidebar-nav">
                 <li class="sidebar-brand">
                     <a href="#">
@@ -21,4 +20,4 @@
                     <a href="#">Chat</a>
                 </li>
             </ul>
-            </div>
+            </di
