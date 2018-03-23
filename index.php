@@ -28,26 +28,23 @@
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
                     <a href="#">
-                        OBTBook
+                        OBTHub
                     </a>
                 </li>
                 <li>
-                    <a href="#">Dashboard</a>
-                </li>
-                <li>
-                    <a href="#">Overview</a>
+                    <a href="#">All Posts</a>
                 </li>
                 <li>
                     <a href="#">Events</a>
                 </li>
                 <li>
+                    <a href="#">Articles</a>
+                </li>
+                <li>
                     <a href="#">About</a>
                 </li>
                 <li>
-                    <a href="#">Services</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
+                    <a href="#">Chat</a>
                 </li>
             </ul>
         </div>
@@ -61,17 +58,24 @@
                 <div class="row mt-5">
                   <div class="col px-0">
                     <a href="#menu-toggle" class="btn" id="menu-toggle">← Nav</a>
-                    <h1>Welcome to OBTBook !</h1>
+                    <h1>Welcome to OBTHub !</h1>
                     <p>Here are your news stories for the day.</p>
                   </div>
                 </div>
                 <div class="row my-5 posts">
                   <div class="col">
                     <h2>RECENT POSTS</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit nullam est, id scelerisque dictum sapien malesuada vulputate ligula. Conubia erat augue pretium feugiat habitasse curabitur arcu, nec dapibus curae leo cras elementum, himenaeos facilisi montes consequat vel metus. Taciti magnis blandit metus justo ullamcorper fringilla nascetur quisque dictum eu sapien ligula a, vel nullam augue sociosqu tristique penatibus malesuada inceptos fusce donec sollicitudin.</p>
+                    <table>
+                      <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Date</th>
+                      </tr>
+                    </table>
                     <hr>
                     <form method="post">
-                      <textarea class="form-control" style="height:200px"></textarea>
+                      <input type="text" class="form-control mb-5" style="width:40%" placeholder="Name" required>
+                      <textarea class="form-control" style="height:200px" required></textarea>
                       <input type="submit" value="submit" class="btn btn2 m-4">
                     </form>
                   </div>
@@ -86,7 +90,7 @@
                 </div>
                 <div class="row">
                   <div align="center">
-                    <h2>YOUR GALLERY</h2>
+                    <h2>RECENT HIGHLIGHTS</h2>
                     <div class="gal-container p-5">
                     <img src="https://images.unsplash.com/photo-1506703479330-1bc6e2038b53?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=65eed7ea65d72c13f1b1f4ef881e922a&auto=format&fit=crop&w=1889&q=80">
                     </div>
@@ -95,7 +99,6 @@
               </div>
               </div>
             </div>
-        </div>
         </div>
         <!-- /#page-content-wrapper -->
 

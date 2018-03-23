@@ -68,6 +68,15 @@ hr{
   border-bottom: 1px solid rgba(0,0,0,.3);
 }
 
+table{
+  width:100%;
+}
+
+tr th{
+  font-size:2rem;
+  font-weight:300;
+}
+
 .gal-container img{
   width:100%;
   height: 100%;
