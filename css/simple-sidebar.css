@@ -60,7 +60,7 @@ hr{
   background-color: #e6cf8b;
 }
 
-.main .col-md:first-of-type{
+.main .col-lg:first-of-type{
   border-right: 1px solid rgba(0,0,0,.3);
 }
 
