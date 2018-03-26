@@ -57,9 +57,9 @@
                                         <?php 
                                         
                                           $connection = mysqli_connect('localhost', 'root', 'root', 'obthub');        
-                                            $selectAll = "SELECT * FROM users;";
-                                        $r = mysqli_query($connection, $selectAll);
-                                        foreach($r as $k => $v){
+                                          $selectAll = "SELECT * FROM users;";
+                                          $r = mysqli_query($connection, $selectAll);
+                                            foreach($r as $k => $v){
                                             echo '<tr>
                                                     <th>'.$v['topic'].'</th>
                                                     <th>'.$v['fullName'].'</th>
