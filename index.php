@@ -26,12 +26,12 @@
 
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
-            <?php require_once("nav.php"); ?>
+                <?php require_once("nav.php"); ?>
         </div>
         <!-- /Sidebar -->
 
         <!-- Page Content -->
-        <div id="page-content-wrapper" class="py-0">
+        <div id="page-content-wrapper">
             <div class="container-fluid main">
                 <div class="row">
                     <div class="col-lg px-5">
@@ -56,15 +56,14 @@
                                     <tbody>
                                         <?php 
                                         
-                                          $connection = mysqli_connect('localhost', 'root', 'root', 'marvalForum');        
+                                          $connection = mysqli_connect('localhost', 'root', 'root', 'obthub');        
                                             $selectAll = "SELECT * FROM users;";
                                         $r = mysqli_query($connection, $selectAll);
                                         foreach($r as $k => $v){
                                             echo '<tr>
-                                                <th scope="row">'.$v['uid'].'</th>
-                                                <td>'.$v['topic'].'</td>
-                                                <td>'.$v['author'].'</td>
-                                                </tr>';
+                                                    <th>'.$v['topic'].'</th>
+                                                    <th>'.$v['fullName'].'</th>
+                                                 </tr>';
                                         };
                                         
                                         ?>
@@ -72,7 +71,7 @@
                                 </table>
                                 <hr>
                                 <form action="process.php" method="post" enctype="multipart/form-data">
-                                    <input type="text" name="author" class="form-control mb-4" style="width:50%" placeholder="Name" required>
+                                    <input type="text" name="fullName" class="form-control mb-4" style="width:50%" placeholder="Name" required>
                                     <input type="text" name="topic" class="form-control mb-4" style="width:50%" placeholder="Topic" required>
                                     <textarea class="form-control" name="article" style="height:200px" required></textarea>
                                     <input type="submit" value="submit" class="btn btn2 m-4">
@@ -81,15 +80,15 @@
                         </div>
                     </div>
                     <div class="col-lg">
-                        <div class="row my-5">
-                            <div class="col" id="fileup" align="center">
+                        <div class="row mt-2">
+                            <div class="col p-5" id="fileup" align="center">
                                 <a href="#" class="btn btn2 m-2">Upload a file</a><br>
                                 <p>Maximum upload size 2MB.</p>
                             </div>
                         </div>
                         <div class="row">
-                            <div align="center">
-                                <h2>POST TITLE</h2>
+                            <div id="gradient-over" align="center">
+                                <h2 class="p-5">POST TITLE</h2>
                                 <div class="gal-container p-5">
                                     <img src="https://images.unsplash.com/photo-1506703479330-1bc6e2038b53?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=65eed7ea65d72c13f1b1f4ef881e922a&auto=format&fit=crop&w=1889&q=80">
                                 </div>
