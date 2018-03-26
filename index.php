@@ -54,19 +54,22 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+<!--                                        MySQL INSERT-->
                                         <?php 
                                         
                                           $connection = mysqli_connect('localhost', 'root', 'root', 'obthub');        
-                                          $selectAll = "SELECT * FROM users;";
+                                          $selectAll = "SELECT * FROM users;";  
                                           $r = mysqli_query($connection, $selectAll);
                                             foreach($r as $k => $v){
                                             echo '<tr>
                                                     <th>'.$v['topic'].'</th>
                                                     <th>'.$v['fullName'].'</th>
+                                                    <th>'.$v['timestamp'].'</th>
                                                  </tr>';
                                         };
                                         
                                         ?>
+<!--                                        JSON Insert-->
                                     </tbody>
                                 </table>
                                 <hr>
