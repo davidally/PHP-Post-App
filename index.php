@@ -42,7 +42,7 @@
                                 <p>Here are your news stories for the day.</p>
                             </div>
                         </div>
-                        <div class="row my-5 posts">
+                        <div class="row my-5">
                             <div class="col">
                                 <h2>RECENT POSTS</h2>
                                 <table>
@@ -54,7 +54,7 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-<!--                                        MySQL INSERT-->
+<!--                                        Insert SQL/JSON value into table row-->
                                         <?php 
                                         
                                           $connection = mysqli_connect('localhost', 'root', 'root', 'obthub');        
@@ -62,7 +62,7 @@
                                           $r = mysqli_query($connection, $selectAll);
                                             foreach($r as $k => $v){
                                             echo '<tr>
-                                                    <th>'.$v['topic'].'</th>
+                                                    <th class="posted">'.$v['topic'].'</th>
                                                     <th>'.$v['fullName'].'</th>
                                                     <th>'.$v['timestamp'].'</th>
                                                  </tr>';
@@ -90,10 +90,10 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div id="gradient-over" align="center">
-                                <h2 class="p-5">POST TITLE</h2>
-                                <div class="gal-container p-5">
-                                    <img src="https://images.unsplash.com/photo-1506703479330-1bc6e2038b53?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=65eed7ea65d72c13f1b1f4ef881e922a&auto=format&fit=crop&w=1889&q=80">
+                            <div id="gradient-over" class="p-5" align="center">
+                                <h2 class="p-3">POST TITLE</h2>
+                                <div class="post-container">
+                                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                 </div>
                             </div>
                         </div>

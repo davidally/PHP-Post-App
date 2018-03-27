@@ -31,11 +31,6 @@ hr{
   margin: 30px 0;
 }
 
-.posts p{
-  font-size:2rem;
-  text-transform: none;
-}
-
 .form-control{
   font-size:2rem;
 }
@@ -77,9 +72,17 @@ tr th{
   font-weight:300;
 }
 
-.gal-container img{
+tr .posted:hover{
+    background-color: #656565;
+}
+
+.post-container{
   width:100%;
   height: 100%;
+}
+
+.post-container p{
+    font-size: 2.5rem;
 }
 
 #gradient-over{
