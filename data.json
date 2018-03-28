@@ -1,13 +1,22 @@
 {
     "1": {
-        "author": "David",
-        "topic": "Pls work",
-        "article": "If you see this here that means you got the function to work!"
-    }
-}, {
-    "1": {
-        "author": "Merlin",
-        "topic": "Aloha",
-        "article": "I'm chilling at the round table and stuff."
+        "author": "Never cache",
+        "topic": "Its bad",
+        "article": "CACHES ARE BAD NEVER CACHE IF UR USING PHP CUS THEN UR JQUERY FUNCTIONS WONT WORK PROPERLY AND U WONT BE ABLE TO EFFECTIVELY DEBUG UR JS!!!"
+    },
+    "2": {
+        "author": "Kurt G",
+        "topic": "Why are caches giving people headaches?",
+        "article": "I was working on my final project for OBT and spent two days looking at my code...The problem was the cache. I was super stressed and didn't know what to do but finally I went on incognito browser and my site worked! Caches are really really dumb..."
+    },
+    "3": {
+        "author": "ljades",
+        "topic": "erfergre",
+        "article": "regerger"
+    },
+    "4": {
+        "author": "Dave",
+        "topic": "Hi",
+        "article": "Hey"
     }
 }

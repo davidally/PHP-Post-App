@@ -8,36 +8,38 @@ $art = $_POST['article'];
 
 //Post Index Increment
 
-if (count($d) == 0)
-    { 
-        $c = 1; 
-    } else {
-        $c = count($d) + 1; 
-}
-
-$k = "profile".$c;
-
-$a = array(
-    "name" => $n,
-    "genre" => $g
-);
-
-$d[$k] = $a;
+//if (count($d) == 0)
+//    { 
+//        $c = 1; 
+//    } else {
+//        $c = count($d) + 1; 
+//}
+//
+//$k = "profile".$c;
+//
+//$a = array(
+//    "name" => $n,
+//    "genre" => $g
+//);
+//
+//$d[$k] = $a;
 
 //Post Index Increment
 
 $jsdata = array(
-    "1" =>  array(
             "author" => "$auth",
             "topic" => "$top",
             "article" => "$art"
-        )
-               );
+        );
+               
 
 $data_results = file_get_contents('data.json');
 $temp = json_decode($data_results, true);
 
-$temp[] = $jsdata; 
+$key = count($temp);
+++$key;
+
+$temp[$key] = $jsdata; 
 
 
 $j = json_encode($temp);
