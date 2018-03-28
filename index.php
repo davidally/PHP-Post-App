@@ -63,7 +63,7 @@
                                         <?php 
                                         
                                           $connection = mysqli_connect('localhost', 'root', 'root', 'obthub');        
-                                          $selectAll = "SELECT * FROM users;";  
+                                          $selectAll = "SELECT * FROM users ORDER BY timestamp DESC LIMIT 5;";  
                                           $r = mysqli_query($connection, $selectAll);
                                             foreach($r as $k => $v){
                                             echo '<tr>
