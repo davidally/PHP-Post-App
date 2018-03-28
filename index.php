@@ -52,11 +52,13 @@
                                 <h2>RECENT POSTS</h2>
                                 <table>
                                     <thead>
-                                        <tr>
+<!--
+                                        <tr class="field-label">
                                             <th>Title</th>
                                             <th>Author</th>
                                             <th>Date</th>
                                         </tr>
+-->
                                     </thead>
                                     <tbody>
 <!--                                        Insert SQL/JSON value into table row-->
@@ -66,15 +68,16 @@
                                           $selectAll = "SELECT * FROM users ORDER BY timestamp DESC LIMIT 5;";  
                                           $r = mysqli_query($connection, $selectAll);
                                             foreach($r as $k => $v){
+                                                $createdDate = date('F j, Y', strtotime($v['timestamp']));
                                             echo '<tr>
                                                     <th class="posted">'.$v['topic'].'</th>
                                                     <th>'.$v['fullName'].'</th>
-                                                    <th>'.$v['timestamp'].'</th>
+                                                    <th>'.$createdDate.'</th>
                                                  </tr>';
                                         };
                                         
                                         ?>
-<!--                                        JSON Insert-->
+                                        
                                     </tbody>
                                 </table>
                                 <hr>
@@ -96,7 +99,7 @@
                         </div>
                         <div class="row">
                             <div id="gradient-over" class="p-5" align="center">
-                                <h2 class="p-3 post-title">POST TITLE</h2>
+                                <h2 class="p-3 post-title">post title</h2>
                                 <div class="post-container">
                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                 </div>

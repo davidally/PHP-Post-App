@@ -14,10 +14,13 @@ $(document).ready(function () {
             $.each(data, function (key, value) {
                 if (txt == value['topic']) {
                     $('.post-container p').text(value.article);
+                    $('.post-title').text(value.topic);
                 }
 
             });
         });
 
     })
+//    Show Blog Posts
+    
 });
