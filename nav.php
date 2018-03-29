@@ -1,7 +1,7 @@
 <ul class="sidebar-nav">
                 <li class="sidebar-brand">
                     <a href="#">
-                        OBTHub
+                        <img src="img/OBT_LOGO.png" style="height:auto; width:200px;">
                     </a>
                 </li>
                 <li>

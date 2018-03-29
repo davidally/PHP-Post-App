@@ -6,7 +6,7 @@ $(document).ready(function () {
         $("#wrapper").toggleClass("toggled");
     })
 
-    //    Show Blog Posts
+    //    Show Recent Blog Posts
     $('.posted').on('click', function (event) {
         const txt = $(this).text();
 
@@ -21,6 +21,16 @@ $(document).ready(function () {
         });
 
     })
-//    Show Blog Posts
+//    Show Recent Blog Posts
+    
+//    Show ALL Blog Posts
+    $('#full-posts').hide();
+    $('#show-posts').on('click', () => {
+        $('#full-posts').fadeIn(1500);
+        $('html,body').animate({
+        scrollTop: $("#full-posts").offset().top},
+        'slow');
+    })
+//    Show ALL Blog Posts
     
 });

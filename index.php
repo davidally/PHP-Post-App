@@ -4,11 +4,6 @@
 
 <head>
 
-<meta http-equiv="cache-control" content="max-age=0" />
-<meta http-equiv="cache-control" content=no-store />
-<meta http-equiv="expires" content="-1" />
-<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT "/>
-<meta http-equiv="pragma" content="no-cache" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -43,8 +38,8 @@
                         <div class="row mt-5">
                             <div class="col px-0">
                                 <a href="#menu-toggle" class="btn" id="menu-toggle">← Nav</a>
-                                <h1>Welcome to OBTHub !</h1>
-                                <p>Here are your news stories for the day.</p>
+                                <h1>Welcome to OBTHub!</h1>
+                                <p>Here are your top news stories for the day.</p>
                             </div>
                         </div>
                         <div class="row my-5">
@@ -68,7 +63,7 @@
                                           $selectAll = "SELECT * FROM users ORDER BY timestamp DESC LIMIT 5;";  
                                           $r = mysqli_query($connection, $selectAll);
                                             foreach($r as $k => $v){
-                                                $createdDate = date('F j, Y', strtotime($v['timestamp']));
+                                                $createdDate = date('m/j/Y', strtotime($v['timestamp']));
                                             echo '<tr>
                                                     <th class="posted">'.$v['topic'].'</th>
                                                     <th>'.$v['fullName'].'</th>
@@ -93,8 +88,8 @@
                     <div class="col-lg">
                         <div class="row mt-2">
                             <div class="col p-5" id="fileup" align="center">
-                                <a href="#" class="btn btn2 m-2">Upload a file</a><br>
-                                <p>Maximum upload size 2MB.</p>
+                                <a href="#" class="btn btn2 m-2" id="show-posts">SHOW ALL POSTS</a><br>
+                                <p>Will display all posts.</p>
                             </div>
                         </div>
                         <div class="row">
@@ -105,6 +100,39 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="row" id="full-posts">
+                    <div class="col">
+                                <h2>ALL POSTS</h2>
+                                <table>
+                                    <thead>
+                                        <tr class="field-label">
+                                            <th>Title</th>
+                                            <th>Author</th>
+                                            <th>Date</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+<!--                                        Insert SQL/JSON value into table row-->
+                                        <?php 
+                                        
+                                          $connection = mysqli_connect('localhost', 'root', 'root', 'obthub');        
+                                          $selectAll = "SELECT * FROM users ORDER BY timestamp DESC;";  
+                                          $r = mysqli_query($connection, $selectAll);
+                                            foreach($r as $k => $v){
+                                                $createdDate = date('m/j/Y', strtotime($v['timestamp']));
+                                            echo '<tr>
+                                                    <th class="posted">'.$v['topic'].'</th>
+                                                    <th>'.$v['fullName'].'</th>
+                                                    <th>'.$createdDate.'</th>
+                                                 </tr>';
+                                        };
+                                        
+                                        ?>
+                                        
+                                    </tbody>
+                                </table>
                     </div>
                 </div>
             </div>
