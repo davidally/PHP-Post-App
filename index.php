@@ -38,7 +38,7 @@
                         <div class="row mt-5">
                             <div class="col px-0">
                                 <a href="#menu-toggle" class="btn" id="menu-toggle">← Nav</a>
-                                <h1>Welcome to OBTHub!</h1>
+                                <h1 style="color:#ab35dd;">Welcome to OBTHub!</h1>
                                 <p>Here are your top news stories for the day.</p>
                             </div>
                         </div>

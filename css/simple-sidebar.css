@@ -170,7 +170,7 @@ tr .posted:hover{
 .sidebar-nav li a {
   display: block;
   text-decoration: none;
-  color: #ff0f63;
+  color: white;
 }
 
 .sidebar-nav li a:hover {
